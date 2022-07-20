@@ -1,0 +1,17 @@
+CSS Battles: Battle 1 : #1Simply Square
+
+<!-- OBJECTIVE -->
+<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
+Soln:
+<div></div>
+<style>
+  div {
+    width: 200px;
+    height: 200px;
+    background: #b5e0ba;
+  }
+  body {
+    background: #5d3a3a;
+    margin: 0px;
+  }
+</style>
