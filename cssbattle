@@ -398,7 +398,7 @@ Your garden is looking great. Here you've left a 50 pixel path at the bottom of 
 Unfortunately, the left 20% of your carrots have been overrun with weeds. Use CSS grid one last time to treat your garden.
 
 
---Challenge 28-- Important concept about fr, auto & percentage.
+--Challenge 28-- Important concept about fr, auto & percentages.
 #garden {
   display: grid;
 grid-template-rows: auto 50px; grid-template-columns:20% auto;
