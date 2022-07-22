@@ -125,3 +125,106 @@ grid-column-start: span 3;
   grid-column-end: 6;
 }
 
+Typing both grid-column-start and grid-column-end every time can get tiring. Fortunately, grid-column is a shorthand property that can accept both values at once, separated by a slash.
+
+For example, grid-column: 2 / 4; will set the grid item to start on the 2nd vertical grid line and end on the 4th grid line.
+
+--Challenge 10--
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+grid-column: 4/6;
+}
+
+Try using grid-column to water these carrots. The span keyword also works with this shorthand property so give it a try!
+
+
+--Challenge 11--
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+grid-column:2/span 3;
+}
+
+
+--Challenge 12--
+One of the things that sets CSS grids apart from flexbox is that you can easily position items in two dimensions: columns and rows. grid-row-start works much like grid-column-start except along the vertical axis.
+Use grid-row-start to water these carrots.
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+grid-row-start:3;
+}
+
+
+--Challenge 13--
+Now give the shorthand property grid-row a try.
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+grid-row:3/6;
+}
+
+Use grid-column and grid-row at the same time to set position in both dimensions.
+
+
+--Challenge 14--
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#poison {
+grid-column-start:2;
+grid-row-start:5;
+}
+
+
+--Challenge 15--
+You can also use grid-column and grid-row together to span larger areas within the grid. Give it a try!
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+grid-column:2/6;
+grid-row:1/6;
+}
+
+
+--Challenge 16--
+If typing out both grid-column and grid-row is too much for you, there's yet another shorthand for that. grid-area accepts four values separated by slashes: grid-row-start, grid-column-start, grid-row-end, followed by grid-column-end.
+One example of this would be grid-area: 1 / 1 / 3 / 6;.
+
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+grid-area: 1/2/4/6
+}
