@@ -78,3 +78,50 @@ Now try setting grid-column-start to a negative value.
 #poison {
 grid-column-start: -3;
 }
+
+Instead of defining a grid item based on the start and end positions of the grid lines, you can define it based on your desired column width using the span keyword. Keep in mind that span only works with positive values.
+
+For example, water these carrots with the rule grid-column-end: span 2;.
+
+
+--Challenge 7--
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 2;
+grid-column-end: span 2;
+}
+
+Try using grid-column-end with the span keyword again to water your carrots.
+
+
+--Challenge 8--
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+  grid-column-start: 1;
+grid-column-end:span 5;
+}
+
+You can also use the span keyword with grid-column-start to set your item's width relative to the end position.
+
+--Challenge 9--
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+grid-column-start: span 3;
+  grid-column-end: 6;
+}
+
